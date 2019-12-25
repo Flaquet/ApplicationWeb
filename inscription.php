@@ -9,8 +9,10 @@
 </head>
 <body>
     <form action="connexion.php" method="post">
-    
-        
+
+        <input type="email" name="myEmailField">
+        <input type="password" name="myPassword">  
+        <button type="button" name="inscription" formtarget="_self">Inscription</button>    
     
     </form>
 </body>
