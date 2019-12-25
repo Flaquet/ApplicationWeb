@@ -9,7 +9,7 @@
 </head>
 <body>
     
-
+    <?php Menu(); ?>
 
 </body>
 </html>
