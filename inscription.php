@@ -13,10 +13,11 @@
 </head>
 <body>
     <form name="inscription" action="inscription.php" method="post">
-
-        <input type="email" name="myEmailField">
-        <input type="password" name="myPassword">  
-        <button type="submit" name="inscription" formtarget="_self">Inscription</button>   
+    
+        Pseudo <input type="text" name="pseudo">
+        Mots de passe <input type="password" name="myPassword">
+        Mots de passe confirme <input type="password" name="myPasswordConfir">    
+        <input type="submit" value="inscrire" />
     
     </form>
 
