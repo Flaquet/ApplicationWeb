@@ -1,4 +1,8 @@
-<?php session_start();?>
+<?php   
+    session_start();
+    include("database.php");
+    include("menu.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +16,13 @@
 
         <input type="email" name="myEmailField">
         <input type="password" name="myPassword">  
-        <button type="button" name="inscription" formtarget="_self">Inscription</button>    
+        <button type="submit" name="inscription" formtarget="_self">Inscription</button>   
     
     </form>
+
+    <?php 
+
+    
+    ?>
 </body>
 </html>
