@@ -13,8 +13,8 @@
 </head>
 <body>
     <form name="inscription" action="inscription.php" method="post">
-        Nom <input type="text" name="pseudo">
-        Prenom <input type="text" name="pseudo">
+        Nom <input type="text" name="Nom">
+        Prenom <input type="text" name="Prenom">
         Pseudo <input type="text" name="pseudo">
         Mots de passe <input type="password" name="myPassword">
         Mots de passe confirme <input type="password" name="myPasswordConfir">    
