@@ -3,7 +3,7 @@
 
     function Menu(){
 
-        echo "";
+        echo "<a href=inscription.php>PHP</a>";
 
     }
 
