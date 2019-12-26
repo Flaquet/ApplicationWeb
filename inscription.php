@@ -12,7 +12,7 @@
     <title>Inscription</title>
 </head>
 <body>
-    <form action="connexion.php" method="post">
+    <form name="inscription" action="inscription.php" method="post">
 
         <input type="email" name="myEmailField">
         <input type="password" name="myPassword">  
@@ -22,6 +22,7 @@
 
     <?php 
 
+        
     
     ?>
 </body>
