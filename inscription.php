@@ -14,7 +14,9 @@
 <body>
 
     <?php Menu(); ?>
-    
+
+    <?php
+    echo'
     <form name="inscription" action="inscription.php" method="post">
 
         Nom <input type="text" name="Nom">
@@ -24,12 +26,37 @@
         Mots de passe confirme <input type="password" name="myPasswordConfir">    
         <input type="submit" value="inscrire" />
     
-    </form>
-
+    </form>';
+    ?>
     <?php 
 
-        
-    
+        $pseudo_erreur1 = NULL;
+        $pseudo_erreur2 = NULL;
+        $mdp_erreur = NULL;
+        $i = 0;
+        $pseudo=$_POST['pseudo'];
+        $pass = md5($_POST['myPassword']);
+        $confirm = md5($_POST['myPasswordConfir']);
+
+        $query=$db->prepare('SELECT COUNT(*) AS nbr FROM user WHERE pseudo =:pseudo');
+        $query->bindValue(':pseudo',$pseudo, PDO::PARAM_STR);
+        $query->execute();
+        $pseudo_free=($query->fetchColumn()==0)?1:0;
+        $query->CloseCursor();
+        if(!$pseudo_free){
+
+            $pseudo_erreur1 = "Votre pseudo est déjà utilisé par un membre";
+            $i++;
+
+        }
+
+        if ($pass != $confirm || empty($confirm) || empty($pass)){
+
+            $mdp_erreur = "Votre mot de passe et votre confirmation diffèrent, ou sont vides";
+            $i++;
+
+        }
+
     ?>
 </body>
 </html>
