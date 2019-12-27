@@ -2,6 +2,7 @@
     session_start();
     include("database.php");
     include("menu.php");
+    global $db;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,47 +16,31 @@
 
     <?php Menu(); ?>
 
-    <?php
-    echo'
-    <form name="inscription" action="inscription.php" method="post">
+    <form method="post">
 
-        Nom <input type="text" name="Nom">
-        Prenom <input type="text" name="Prenom">
-        Pseudo <input type="text" name="pseudo">
-        Mots de passe <input type="password" name="myPassword">
-        Mots de passe confirme <input type="password" name="myPasswordConfir">    
+        Nom <input type="text" name="Nom" id="Nom">
+        Prenom <input type="text" name="Prenom" id="Prenom">
+        Pseudo <input type="text" name="pseudo" id="pseudo">
+        Mots de passe <input type="password" name="myPassword" id="myPassword">
+        Mots de passe confirme <input type="password" name="myPasswordConfir" id="myPasswordConfir">    
         <input type="submit" value="inscrire" />
     
-    </form>';
-    ?>
+    </form>
+
     <?php 
 
         $pseudo_erreur1 = NULL;
         $pseudo_erreur2 = NULL;
         $mdp_erreur = NULL;
-        $i = 0;
-        $pseudo=$_POST['pseudo'];
-        $pass = md5($_POST['myPassword']);
-        $confirm = md5($_POST['myPasswordConfir']);
 
-        $query=$db->prepare('SELECT COUNT(*) AS nbr FROM user WHERE pseudo =:pseudo');
-        $query->bindValue(':pseudo',$pseudo, PDO::PARAM_STR);
-        $query->execute();
-        $pseudo_free=($query->fetchColumn()==0)?1:0;
-        $query->CloseCursor();
-        if(!$pseudo_free){
+        $q = $db->prepare("INSERT INTO `user`( `nom`, `prenom`, `pseudo`, `mdp`) VALUES (:nom,:prenom,:pseudo,:mdp)");
+        $q->execute([
+            'nom' => '';
+            'prenom' => '';
+            'pseudo' => '';
+            'mdp' => '';
+        ])
 
-            $pseudo_erreur1 = "Votre pseudo est déjà utilisé par un membre";
-            $i++;
-
-        }
-
-        if ($pass != $confirm || empty($confirm) || empty($pass)){
-
-            $mdp_erreur = "Votre mot de passe et votre confirmation diffèrent, ou sont vides";
-            $i++;
-
-        }
 
     ?>
 </body>
