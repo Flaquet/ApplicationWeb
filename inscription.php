@@ -19,27 +19,50 @@
     <form method="post">
 
         Nom <input type="text" name="Nom" id="Nom">
-        Prenom <input type="text" name="Prenom" id="Prenom">
-        Pseudo <input type="text" name="pseudo" id="pseudo">
-        Mots de passe <input type="password" name="myPassword" id="myPassword">
-        Mots de passe confirme <input type="password" name="myPasswordConfir" id="myPasswordConfir">    
-        <input type="submit" value="inscrire" />
+        Prenom <input type="text" name="Prenom">
+        Pseudo <input type="text" name="Pseudo">
+        Mots de passe <input type="password" name="Mdp">
+        Mots de passe confirme <input type="password" name="Mdpconf">    
+        <button type="submit" name="inscription">Envoyer</button>
     
     </form>
 
     <?php 
+        if(!empty($_POST)){
+            extract($_POST);
+            $valid = true;
+            if (isset($_POST['inscription'])){
+                //on recuper le nom prenom pseudo mdp mdpconf du formulaire pour traiter
+                $nom = $_POST['Nom'];
+                $prenom = $_POST['Prenom'];
+                $pseudo = $_POST['Pseudo'];
+                $mdp =  $_POST['Mdp'];
+                $mdpconf = $_POST['Mdpconf'];
 
-        $pseudo_erreur1 = NULL;
-        $pseudo_erreur2 = NULL;
-        $mdp_erreur = NULL;
+                if(empty($nom)){
+                    $valid = false;
+                     echo "Le nom d' utilisateur ne peut pas être vide";
+                }
+                if(empty($prenom)){
+                    $valid = false;
+                    echo "Le prenom d' utilisateur ne peut pas être vide";
+                }      
+                if(empty($pseudo)){
+                    $valid = false;
+                    echo "Le pseudo d' utilisateur ne peut pas être vide";
+                }else{
+                    //verifier que le pseudo est disponible
+                }
+            }
+        }
 
-        $q = $db->prepare("INSERT INTO `user`( `nom`, `prenom`, `pseudo`, `mdp`) VALUES (:nom,:prenom,:pseudo,:mdp)");
-        $q->execute([
-            'nom' => '';
-            'prenom' => '';
-            'pseudo' => '';
-            'mdp' => '';
-        ])
+        //$q = $db->prepare("INSERT INTO `user`( `nom`, `prenom`, `pseudo`, `mdp`) VALUES (:nom,:prenom,:pseudo,:mdp)");
+        //$q->execute([
+        //    'nom' => '';
+        //    'prenom' => '';
+        //    'pseudo' => '';
+        //    'mdp' => '';
+        //])
 
 
     ?>
