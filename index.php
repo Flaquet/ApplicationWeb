@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include("menu.php"); 
+    include("include/menu.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

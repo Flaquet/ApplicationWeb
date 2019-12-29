@@ -1,7 +1,7 @@
 <?php   
     session_start();
-    include("database.php");
-    include("menu.php");
+    include("include/database.php");
+    include("include/menu.php");
 
     if (isset($_SESSION['id'])){
         echo "Vous ete deja inscript";
