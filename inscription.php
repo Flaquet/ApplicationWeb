@@ -90,6 +90,7 @@
                         'pseudo' => $pseudo,
                         'mdp' => $hashmdp,
                 ]);
+
                 header('Location: index.php');
                 exit;
                 }

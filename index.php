@@ -1,6 +1,10 @@
 <?php
     session_start();
-    include("include/menu.php"); 
+    include("include/menu.php");
+    include("include/database.php");
+    $p = $db->prepare("SELECT * FROM user WHERE id_user = ?", array($_SESSION['id']));
+    
+    $p = $p->fetch();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +15,6 @@
     <title>Index</title>
 </head>
 <body>
-    
     <?php Menu(); ?>
 
 </body>
