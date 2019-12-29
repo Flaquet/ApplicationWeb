@@ -80,7 +80,7 @@
                 }
 
                 if($valid){
-
+                    //protection du mdp crytage 
                     $hashmdp = password_hash($mdp, PASSWORD_DEFAULT);
 
                     $q = $db->prepare("INSERT INTO `user`( `nom`, `prenom`, `pseudo`, `mdp`) VALUES (:nom,:prenom,:pseudo,:mdp)");
