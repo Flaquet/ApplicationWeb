@@ -16,9 +16,7 @@
 </head>
 <body>
 
-    <?php 
-    echo $_SESSION['id'];
-    Menu(); ?>
+    <?php Menu(); ?>
 
 </body>
 </html>
