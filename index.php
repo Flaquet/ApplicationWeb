@@ -15,7 +15,10 @@
     <title>Index</title>
 </head>
 <body>
-    <?php Menu(); ?>
+
+    <?php 
+    echo $_SESSION['id'];
+    Menu(); ?>
 
 </body>
 </html>

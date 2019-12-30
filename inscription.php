@@ -4,7 +4,6 @@
     include("include/menu.php");
 
     if (isset($_SESSION['id'])){
-        echo "Vous ete deja inscript";
         header('Location: index.php'); 
         exit;
     }
@@ -36,7 +35,7 @@
 
     <?php 
         if(!empty($_POST)){
-            extract($_POST);
+            
             $valid = true;
             if (isset($_POST['inscription'])){
                 //on recuper le nom prenom pseudo mdp mdpconf du formulaire pour traiter
@@ -91,7 +90,7 @@
                         'mdp' => $hashmdp,
                 ]);
 
-                header('Location: index.php');
+                header('Location: connexion.php');
                 exit;
                 }
 
