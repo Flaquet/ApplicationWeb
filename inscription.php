@@ -24,14 +24,15 @@
 
     <?php Menu(); ?>
     <div id="registration">
+    <h2>Inscription</h2>
         <form method="post">
         <fieldset>
-            Nom <input type="text" name="Nom" id="Nom">
-            Prenom <input type="text" name="Prenom">
-            Pseudo <input type="text" name="Pseudo">
-            Mots de passe <input type="password" name="Mdp">
-            Mots de passe confirme <input type="password" name="Mdpconf">    
-            <button type="submit" name="inscription">Envoyer</button>
+            <div><label for="Nom">Nom</label> <input type="text" name="Nom" id="Nom" value="Nom"></div>
+            <div><label for="Prenom">Prenom</label> <input type="text" name="Prenom" value=""></div>
+            <div><label for="Pseudo">Pseudo</label> <input type="text" name="Pseudo" value=""></div>
+            <div><label for="Mdp">Mots de passe</label> <input type="password" name="Mdp" value=""></div>
+            <div><label for="Mdpconf">Confirmée</label> <input type="password" name="Mdpconf" value=""></div>  
+            <div><button type="submit" name="inscription">Envoyer</button></div>
         </fieldset>
         </form>
     </div>
