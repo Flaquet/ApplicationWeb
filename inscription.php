@@ -27,11 +27,11 @@
     <h2>Inscription</h2>
         <form method="post">
         <fieldset>
-            <div><label for="Nom">Nom</label> <input type="text" name="Nom" id="Nom" value="Nom"></div>
-            <div><label for="Prenom">Prenom</label> <input type="text" name="Prenom" value=""></div>
-            <div><label for="Pseudo">Pseudo</label> <input type="text" name="Pseudo" value=""></div>
-            <div><label for="Mdp">Mots de passe</label> <input type="password" name="Mdp" value=""></div>
-            <div><label for="Mdpconf">Confirmée</label> <input type="password" name="Mdpconf" value=""></div>  
+            <div><input type="text" name="Nom" id="Nom" value="" placeholder="Nom"></div>
+            <div><input type="text" name="Prenom" value="" placeholder="Prenom"></div>
+            <div><input type="text" name="Pseudo" value="" placeholder="Pseudo"></div>
+            <div><input type="password" name="Mdp" value="" placeholder="Mots de passe"></div>
+            <div><input type="password" name="Mdpconf" value="" placeholder="confirmée"></div>  
             <div><button type="submit" name="inscription">Envoyer</button></div>
         </fieldset>
         </form>

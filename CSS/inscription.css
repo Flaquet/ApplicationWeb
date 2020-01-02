@@ -31,9 +31,7 @@ font-family: Helvetica, Arial, sans-serif; font-size: 12px;
 #registration fieldset {
     padding: 20px;
 }
-#registration div {
-    padding: 5px;
-}
+
 #registration h2 {
     padding: 10px;
     border-bottom:solid #fff 1px;
@@ -41,5 +39,8 @@ font-family: Helvetica, Arial, sans-serif; font-size: 12px;
 }
 #registration input {
     text-align: center;
-    
+    display: block;
+    margin-bottom: 5px;
+    padding: 3px;
+
 }
