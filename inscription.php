@@ -18,22 +18,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inscription</title>
     <link rel="stylesheet" href="CSS/stylemenu.css">
+    <link rel="stylesheet" href="CSS/inscription.css">
 </head>
 <body>
 
     <?php Menu(); ?>
-
-    <form method="post">
-
-        Nom <input type="text" name="Nom" id="Nom">
-        Prenom <input type="text" name="Prenom">
-        Pseudo <input type="text" name="Pseudo">
-        Mots de passe <input type="password" name="Mdp">
-        Mots de passe confirme <input type="password" name="Mdpconf">    
-        <button type="submit" name="inscription">Envoyer</button>
-    
-    </form>
-
+    <div id="registration">
+        <form method="post">
+        <fieldset>
+            Nom <input type="text" name="Nom" id="Nom">
+            Prenom <input type="text" name="Prenom">
+            Pseudo <input type="text" name="Pseudo">
+            Mots de passe <input type="password" name="Mdp">
+            Mots de passe confirme <input type="password" name="Mdpconf">    
+            <button type="submit" name="inscription">Envoyer</button>
+        </fieldset>
+        </form>
+    </div>
     <?php 
         if(!empty($_POST)){
             
