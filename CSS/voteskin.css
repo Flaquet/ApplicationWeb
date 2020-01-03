@@ -1,0 +1,91 @@
+*, :after, :before {/* a point vue cette ligne permet d'adpter impeur sont sit a une tel*/
+    box-sizing: border-box;
+}
+body {
+    /* Permet de modifier le font du site web avec la couleur de l'ecriture la couleur de font avec plein d'autre chose*/
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh!important;
+    height: 100%!important;
+    overflow: auto!important;
+    background-color: #b6b6b6;
+}
+.container {
+    padding-bottom: 3.75rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section {
+    display: block;
+}
+.container--thicker { /* permet de regles les a droit est gauche*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galery { /* permet de regles le magin insi que le padding aussi de suprime le point de ul*/
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.galery li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5.4375rem;
+    text-align: center;
+    margin: 0 1.25rem;
+}
+.galery li a {
+    order: 1;
+    font-size: 1.375rem;
+    line-height: 2.5rem;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.galery li a span {
+    display: block;
+    font-size: 1.875rem;
+    font-family: PS Fournier Regular,Arial,sans-serif;
+    line-height: 3.125rem;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.galery li figure img {
+    width: 100%;
+    height: auto;
+    transition: all .3s ease-in-out;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+
+.push-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+

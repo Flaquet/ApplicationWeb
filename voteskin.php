@@ -6,44 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="voteskin.css">
 </head>
 
 <body>
-    <nav>
-        <div class="button1">
-            <li> <img src="IMG/faux.png"></li>
+
+    <section class="container">
+        <div class="push-card__content">
+            <h1>Vote</h1>
+            <figure><img src="baniere.png" alt=""></figure>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container--thicker">
+            <ul class="galery">
+                <li>
+                    <figure>
+                        <img src="IMG/Equipage_du_Chapeau_de_Paille_Jolly_Roger.png" srcset="" alt="" />
+                    </figure>
+                    <span>Mugiwara no Ichimi</span>
+                    L'Équipage du Chapeau de Paille
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container--thicker">
+            <ul class="galery">
+                <li>
+                    <figure>
+                        <img src="IMG/faux.png" srcset="" alt="" />
+                    </figure>
+                    <span>....</span>
+                    .....
+
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/gentilmaraudeur.png" srcset="" alt="" />
+                    </figure>
+                    <span>.....</span>
+                    ......
+
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/ghoule.png" srcset="" alt="" />
+                    </figure>
+                    <span>....</span>
+                    .....
+
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/joueusedecisive.png" srcset="" alt="" />
+                    </figure>
+                    <span>....</span>
+                    .....
+
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/skulltrooper.png" srcset="" alt="" />
+                    </figure>
+                    <span>....</span>
+                    .....
+
+                </li>
+            </ul>
         </div>
 
-        </li>
-        <div class="button2">
-            <li><img src="IMG/gentilmaraudeur.png"> 
-            </li>
-        </div>
+    </section>
 
-        </li>
-        <div class="button3">
-            <li><img src="IMG/ghoule.png">
-            </li>
-        </div>
-
-        <li>
-            <div class="button4">
-        <li><img src="IMG/joueusedecisive.png">
-        </li>
-        </div>
-
-        </li>
-        <div class="button5">
-            <li><img src="IMG/skulltrooper.png"> </li>
-        </div>
-
-        </li>
-        <div class="button6">
-            <li> <a href="pagekaijo.html"> <img src="imgkaijo.png"> </a></li>
-        </div>
-        </li>
-
-    </nav>
 
 </body>
 
