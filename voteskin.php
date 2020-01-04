@@ -22,18 +22,6 @@
             <ul class="galery">
                 <li>
                     <figure>
-                        <img src="IMG/Equipage_du_Chapeau_de_Paille_Jolly_Roger.png" srcset="" alt="" />
-                    </figure>
-                    <span>Mugiwara no Ichimi</span>
-                    L'Équipage du Chapeau de Paille
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="container--thicker">
-            <ul class="galery">
-                <li>
-                    <figure>
                         <img src="IMG/faux.png" srcset="" alt="" />
                     </figure>
                     <span>....</span>
