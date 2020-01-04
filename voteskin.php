@@ -21,20 +21,20 @@
         <div class="container--thicker">
             <ul class="galery">
                 <li>
+
                     <figure>
                         <img src="IMG/faux.png" srcset="" alt="" />
                     </figure>
                     <span>....</span>
-                    .....
-
+                   
                 </li>
                 <li>
+
                     <figure>
                         <img src="IMG/gentilmaraudeur.png" srcset="" alt="" />
                     </figure>
                     <span>.....</span>
                     ......
-
                 </li>
                 <li>
                     <figure>
