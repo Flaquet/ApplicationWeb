@@ -22,7 +22,7 @@
             <ul class="galery">
                 <li>
                     <figure>
-                        <img src="IMG/Equipage_du_Chapeau_de_Paille_Jolly_Roger.png" srcset="" alt="" />
+                        <img src="chevaleresse.png" srcset="" alt="" />
                     </figure>
                     <span>Mugiwara no Ichimi</span>
                     L'Équipage du Chapeau de Paille
@@ -34,7 +34,6 @@
             <ul class="galery">
                 <li>
                     <figure>
-                        <img src="IMG/faux.png" srcset="" alt="" />
                     </figure>
                     <span>....</span>
                     .....
@@ -42,7 +41,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="IMG/gentilmaraudeur.png" srcset="" alt="" />
+                        <img src="IMG/ikonik.png" srcset="" alt="" />
                     </figure>
                     <span>.....</span>
                     ......
@@ -58,7 +57,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="IMG/joueusedecisive.png" srcset="" alt="" />
+                        <img src="IMG/joueuse.png" srcset="" alt="" />
                     </figure>
                     <span>....</span>
                     .....
