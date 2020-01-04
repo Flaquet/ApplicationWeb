@@ -21,6 +21,7 @@
         <div class="container--thicker">
             <ul class="galery">
                 <li>
+<<<<<<< HEAD
                     <figure>
                         <img src="chevaleresse.png" srcset="" alt="" />
                     </figure>
@@ -33,19 +34,21 @@
         <div class="container--thicker">
             <ul class="galery">
                 <li>
+=======
+
+>>>>>>> 939491dd53de86c3654e301d719c8b6c45902fdc
                     <figure>
                     </figure>
                     <span>....</span>
-                    .....
-
+                   
                 </li>
                 <li>
+
                     <figure>
                         <img src="IMG/ikonik.png" srcset="" alt="" />
                     </figure>
                     <span>.....</span>
                     ......
-
                 </li>
                 <li>
                     <figure>
