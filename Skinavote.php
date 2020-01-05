@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="voteskin.css">
+    <link rel="stylesheet" href="CSS/voteskin.css">
 </head>
 
 <body>
@@ -24,8 +24,8 @@
                     <figure>
                         <img src="IMG/Equipage_du_Chapeau_de_Paille_Jolly_Roger.png" srcset="" alt="" />
                     </figure>
-                    <span>Mugiwara no Ichimi</span>
-                    L'Équipage du Chapeau de Paille
+                    <span></span>
+                  
                     </a>
                 </li>
             </ul>
@@ -36,42 +36,52 @@
                     <figure>
                         <img src="IMG/chevaleresse.png" srcset="" alt="" />
                     </figure>
-                    <span>....</span>
-                    .....
-
+                    <span></span>
+                
                 </li>
                 <li>
                     <figure>
                         <img src="IMG/epice.png" srcset="" alt="" />
                     </figure>
-                    <span>.....</span>
-                    ......
+                    <span></span>
+                  
 
                 </li>
                 <li>
                     <figure>
-                        <img src="IMG/ghoule.png" srcset="" alt="" />
+                        <img src="IMG/goule.png" srcset="" alt="" />
                     </figure>
-                    <span>....</span>
-                    .....
-
+                    <span></span>
+                    
                 </li>
                 <li>
                     <figure>
                         <img src="IMG/joueuse.png" srcset="" alt="" />
                     </figure>
-                    <span>....</span>
-                    .....
+                    <span></span>
+                  
 
                 </li>
                 <li>
                     <figure>
                         <img src="IMG/ikonik.png" srcset="" alt="" />
                     </figure>
-                    <span>....</span>
-                    .....
+                    <span></span>
+                   
 
                 </li>
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/lapin.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+                    </li>
+                <li>
+                    <figure>
+                        <img src="IMG/Dynamo.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
             </ul>
         </div>
 
