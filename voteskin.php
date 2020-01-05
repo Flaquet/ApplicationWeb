@@ -18,25 +18,10 @@
         </div>
     </section>
     <section class="container">
+        
         <div class="container--thicker">
             <ul class="galery">
-                <li>
-<<<<<<< HEAD
-                    <figure>
-                        <img src="chevaleresse.png" srcset="" alt="" />
-                    </figure>
-                    <span>Mugiwara no Ichimi</span>
-                    L'Équipage du Chapeau de Paille
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="container--thicker">
-            <ul class="galery">
-                <li>
-=======
-
->>>>>>> 939491dd53de86c3654e301d719c8b6c45902fdc
+                <li>ez
                     <figure>
                     </figure>
                     <span>....</span>
