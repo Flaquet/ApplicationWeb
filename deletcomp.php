@@ -20,7 +20,7 @@ if (isset($_POST['delete'])){
     $pseudoo = $_SESSION['pseudo'];
     $delete = $db->prepare("DELETE FROM `user` WHERE `pseudo` = :pseudo");
     $delete->execute(['pseudo' => $pseudoo]); 
-    echo "Vottre compte a etait suprimer !";
+    echo "Votre compte a ete supprime !";
     header('Location: index.php'); 
     exit;
 }

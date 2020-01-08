@@ -1,5 +1,3 @@
-<?php include("include/menu.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,99 +7,86 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/voteskin.css">
-    <link rel="stylesheet" href="CSS/stylemenu.css">
 </head>
 
 <body>
-    <?php Menu();
-    ?>
+
     <section class="container">
         <div class="push-card__content">
             <h1>Vote</h1>
-            
+            <figure><img src="baniere.png" alt=""></figure>
         </div>
     </section>
     <section class="container">
-        <form method="post">
-            <div class="container--thicker">
-                <ul class="galery">
+        <div class="container--thicker">
+            <ul class="galery">
+                <li>
+                    <figure>
+                        <img src="IMG/Equipage_du_Chapeau_de_Paille_Jolly_Roger.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+                  
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container--thicker">
+            <ul class="galery">
+                <li>
+                    <figure>
+                        <img src="IMG/chevaleresse.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+                
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/epice.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+                  
 
-                    <li>
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/goule.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+                    
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/joueuse.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+                  
 
-                        <figure>
-                            <img src="IMG/chevaleresse.png" srcset="" alt="" />
-                        </figure>
-                        <span></span>
-                        <input type="radio" name="chevaleresse" value="chevaleresse">
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/ikonik.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+                   
 
+                </li>
+                </li>
+                <li>
+                    <figure>
+                        <img src="IMG/lapin.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
                     </li>
-                    <li>
+                <li>
+                    <figure>
+                        <img src="IMG/Dynamo.png" srcset="" alt="" />
+                    </figure>
+                    <span></span>
+            </ul>
+        </div>
 
-                        <figure>
-                            <img src="IMG/epice.png" srcset="" alt="" />
-                        </figure>
-                        <span></span>
-                        <input type="radio" name="epice" value="epice">
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <img src="IMG/goule.png" srcset="" alt="" />
-                        </figure>
-                        <span></span>
-                        <input type="radio" name="goule" value="goule">
-
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="IMG/joueuse.png" srcset="" alt="" />
-                        </figure>
-                        <span></span>
-                        <input type="radio" name="joueuse" value="joueuse">
-
-                    </li>
-                    <li>
-
-                        <figure>
-                            <img src="IMG/ikonik.png" srcset="" alt="" />
-                        </figure>
-                        <span></span>
-                        <input type="radio" name="ikonik" value="ikonik">
-
-
-                    </li>
-
-                    <li>
-
-                        <figure>
-                            <img src="IMG/lapin.png" srcset="" alt="" />
-                        </figure>
-                        <span></span>
-                        <input type="radio" name="lapin" value="lapin">
-                    </li>
-                    <li>
-
-                        <figure>
-                            <img src="IMG/Dynamo.png" srcset="" alt="" />
-                        </figure>
-                        <span></span>
-                        <input type="radio" name="Dynamo" value="Dynamo">
-
-                    </li>
-
-
-                </ul>
-            </div>
-            <div class="container--thicker">
-                <ul class="galery">
-                    <li>
-                        <input type="submit" value="Ok !">
-                    </li>
-                </ul>
-            </div>
-        </form>
     </section>
+    
 
 
 </body>

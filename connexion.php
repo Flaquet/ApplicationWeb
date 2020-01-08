@@ -20,7 +20,7 @@
 <?php Menu(); ?>
     <form method="post">
         Pseudo <input type="text" name="Pseudo">
-        Mots de passe <input type="password" name="Mdp">
+        Mot de passe <input type="password" name="Mdp">
         <button type="submit" name="connection">Envoyer</button>
     </form>
     <?php
