@@ -1,5 +1,6 @@
 <?php session_start(); 
     include("include/database.php");
+    include("include/menu.php");
     if (isset($_SESSION['id'])){
         header('Location: index.php'); 
         exit;
@@ -13,9 +14,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/stylemenu.css">
+    <link rel="stylesheet" href="CSS/stylemenu.css">
 </head>
 <body>
-
+<?php Menu(); ?>
     <form method="post">
         Pseudo <input type="text" name="Pseudo">
         Mots de passe <input type="password" name="Mdp">

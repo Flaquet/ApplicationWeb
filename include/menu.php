@@ -18,8 +18,14 @@
             ?>
             <div class='wifeo_conteneur_menu'>
                 <div class='wifeo_pagemenu'><a href="index.php">Page d'accueil</a></div>
-                <div class='wifeo_pagemenu'><a href="voteskin.php">Vote pour un Skin</a></div>   
-                <div class='wifeo_pagemenu'><a href="deconnexion.php">deconnexion</a></div> 
+                <div class='wifeo_pagemenu'><a href="Skinavote.php">Vote pour un Skin</a></div>  
+                <div class='wifeo_rubrique'><a href='#mw999'>Deco/Suprimer</a>
+                    <div class='wifeo_sousmenu'>
+                        <div class='wifeo_pagesousmenu'><a href="deconnexion.php">deconnexion</a></div> 
+                        <div class='wifeo_pagesousmenu'><a href="deletcomp.php">Supprimer</a></div>
+                    </div>
+                </div> 
+
             </div>
         <?php
         }  

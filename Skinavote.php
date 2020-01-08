@@ -1,3 +1,5 @@
+<?php include("include/menu.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,14 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/voteskin.css">
+    <link rel="stylesheet" href="CSS/stylemenu.css">
 </head>
 
 <body>
-
+    <?php Menu();
+    ?>
     <section class="container">
         <div class="push-card__content">
             <h1>Vote</h1>
-            <figure><img src="baniere.png" alt=""></figure>
+            
         </div>
     </section>
     <section class="container">
