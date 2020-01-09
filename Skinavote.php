@@ -99,7 +99,7 @@ include("include/menu.php");
             <div class="container--thicker">
                 <ul class="galery">
                     <li>
-                        <input type="submit" value="Ok !" name="valider">
+                        <input type="submit" value="Voter !" name="valider">
                     </li>
                 </ul>
             </div>
@@ -109,9 +109,63 @@ include("include/menu.php");
     <?php
 
         if(isset($_POST["valider"])){
+            if (!isset($_SESSION['id'])){
+                header('Location: connexion.php'); 
+                exit;
+            }
+            $chevaleresse = $_POST["chevaleresse"];
+            $epice = $_POST["epice"];
+            $goule = $_POST["goule"];
+            $joueuse = $_POST["joueuse"];
+            $ikonik = $_POST["ikonik"];
+            $lapin = $_POST["lapin"];
+            $Dynamo = $_POST["Dynamo"];
 
-            if()
+            
+            if(!empty($chevaleresse)){
 
+                echo "Chevaleresse Rouge";
+
+            }else{
+
+            }
+            if(!empty($epice)){
+
+                echo "Soldat d'épice";
+            }else{
+
+            }
+            if(!empty($goule)){
+
+                echo "Soldat Goule";
+            }else{
+
+            }
+            if(!empty($joueuse)){
+
+                echo "Joueuse Décisive";
+            }else{
+
+            }
+        
+            if(!empty($ikonik)){
+
+                echo "I.K.O.N.E";
+            }else{
+
+            }
+
+            if(!empty($lapin)){
+
+                echo "Lapinette Bagarreuse";
+            }else{
+
+            }
+            if(!empty($Dynamo)){
+
+                echo "Dynamo";
+            }else{
+        }
         }
 
     ?>

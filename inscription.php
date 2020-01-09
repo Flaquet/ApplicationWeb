@@ -30,7 +30,7 @@
             <div><input type="text" name="Nom" id="Nom" value="" placeholder="Nom"></div>
             <div><input type="text" name="Prenom" value="" placeholder="Prenom"></div>
             <div><input type="text" name="Pseudo" value="" placeholder="Pseudo"></div>
-            <div><input type="password" name="Mdp" value="" placeholder="Mots de passe"></div>
+            <div><input type="password" name="Mdp" value="" placeholder="Mot de passe"></div>
             <div><input type="password" name="Mdpconf" value="" placeholder="confirmée"></div>  
             <div><button type="submit" name="inscription">Envoyer</button></div>
         </fieldset>
