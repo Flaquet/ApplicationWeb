@@ -41,7 +41,7 @@
             
             $valid = true;
             if (isset($_POST['inscription'])){
-                //on recuper le nom prenom pseudo mdp mdpconf du formulaire pour traiter
+                //on recupère le nom prenom pseudo mdp mdpconf du formulaire pour traiter
                 $nom = $_POST['Nom'];
                 $prenom = $_POST['Prenom'];
                 $pseudo = $_POST['Pseudo'];
