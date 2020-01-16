@@ -19,7 +19,7 @@
     <?php Menu(); ?>
 <div class="test">
     <p> Bonjour et bienvenue sur le site permettant d'effectuer
-         des votes sur des Skins du Jeu Vidéo Fortnite Battle Royal
+        des votes pour des Skins du Jeu Vidéo Fortnite Battle Royal
 </p>
     
 <figure>
