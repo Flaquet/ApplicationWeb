@@ -18,11 +18,11 @@ class User
     }
 
     public function afficherUser(){
-        echo "votre l'id est  ".$this->_id." est le nom est ".$this->_Nom;
+        echo "L'id du user est ".$this->_id." Le pseudo du User est ".$this->_Nom;
     }
 
     public function deleteUser(){
-        echo "votre l'id est  ".$this->_id." est le nom est ".$this->_Nom;
+        echo "".$this->_id."".$this->_Nom;
         global $db;
         $delet = $db->prepare("DELETE FROM `user` WHERE `id_user` = ?");
         $delet->execute(array($this->_id));

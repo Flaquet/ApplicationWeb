@@ -32,7 +32,7 @@ include("user.php");
         </li>
     </div>
 
-    <div id="root"> Yolo !!! </div>
+    <div id="root"> Cliquer sur l'image svp </div>
     <div name="test"> 1 </div>
     <div name="test"> 2 </div>
     <div name="test"> 3 </div>
@@ -48,26 +48,26 @@ include("user.php");
         $TabUser[$TabUserIndex++] = new User($tab["id_user"], $tab["pseudo"]);
     }
     ?>
-
-    <FORM action="" methode="POST">
-        <select name="user" id="user-n">
+    <h1>Liste deroulante</h1>
+    <FORM action="" methode="GET">
+        <select name="user" id="pet-select">
+        <option value="0"> Choix du User </option>
             <?php
             //parcours du tableau de User pour afficher les options de la liste déroulante
             foreach ($TabUser as $objetUser) {
-                echo '<option value="' . $objetUser->getId() . '" name="user">' . $objetUser->getNom() . '</option>';
+                echo '<option value="' . $objetUser->getId() . '">' . $objetUser->getNom() . '</option>';
             }
-
             ?>
         </select>
-        <input type="submit" name="submit" />
+        <input type="submit"></input>
     </FORM>
 
     <?php
-    if (isset($_POST["user"])) {
+
+    if (isset($_GET["user"])) {
         //recherche de l'id dans le tableau de user
         foreach ($TabUser as $objetUser) {
-            if ($objetUser->getId() == $_POST["user"]) {
-                $objetUser = new user($_POST['user'], $tab['nom']);
+            if ($objetUser->getId() == $_GET["user"]) {
                 $objetUser->afficherUser();
             }
         }
@@ -75,41 +75,40 @@ include("user.php");
         echo "Aucun user selectionné";
     }
     ?>
+    <h1>CheckBox</h1>
+    <FORM action="" method="POST">
+        <p>Qui Supprimer ?</p>
+        <?php
+        //parcours du tableau de User pour
+        //afficher les options de la liste déroulante
 
-<FORM action="" method="POST">
- <p>Qui Supprimer ?</p>
- <?php
-    //parcours du tableau de User pour
-    //afficher les options de la liste déroulante
- 
-   foreach ($TabUser as $objetUser) {
-    echo '<p><input
-    type="checkbox" value="'.$objetUser->getId().'" name="users[]" />';
-    echo '<label for="coding">'.
-    $objetUser->getNom().' </label></p>';
- }
- ?>
- <input type="submit"></input>
- </FORM>
+        foreach ($TabUser as $objetUser) {
+            echo '<p><input
+    type="checkbox" value="' . $objetUser->getId() . '" name="users[]" />';
+            echo '<label for="coding">' .
+                $objetUser->getNom() . ' </label></p>';
+        }
+        ?>
+        <input type="submit"></input>
+    </FORM>
 
-<?php if (isset($_POST["users"])){
- foreach($_POST['users'] as $idUser){
- // $idUser correspondra à value de checkboxe checké
- // reste plus qu'a faire une requete update ou insert ou delete
- //ici on va rechercher id dans le tableau de user
- $j=0;
- foreach ($TabUser as $objetUser) {
-    if ($objetUser->getId()== $idUser){
-        $objetUser->deleteUser();
-        //j'en profite pour le retirer de mon tableau. car il sera supprimé à l'affichage
-        unset($TabUser[$j]) ;
+    <?php if (isset($_POST["users"])) {
+        foreach ($_POST['users'] as $idUser) {
+            // $idUser correspondra à value de checkboxe checké
+            // reste plus qu'a faire une requete update ou insert ou delete
+            //ici on va rechercher id dans le tableau de user
+            $j = 0;
+            foreach ($TabUser as $objetUser) {
+                if ($objetUser->getId() == $idUser) {
+                    $objetUser->deleteUser();
+                    //j'en profite pour le retirer de mon tableau. car il sera supprimé à l'affichage
+                    unset($TabUser[$j]);
+                }
+                $j++;
+            }
         }
-        $j++;
-        }
-        }
-        }
-       
-     ?>
+    }
+    ?>
 </body>
 <script src="js/in.js"></script>
 
