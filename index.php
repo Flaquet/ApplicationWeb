@@ -15,10 +15,10 @@ include("user.php");
     <link rel="stylesheet" href="CSS/stylemenu.css">
     <link rel="stylesheet" href="CSS/styleindex.css">
     <title>Index</title>
-    <script src="js/in.js"></script>
 </head>
 
 <body>
+<script src="js/in.js"></script>
 
     <?php Menu(); ?>
     <div class="test">
@@ -33,6 +33,8 @@ include("user.php");
     </div>
 
     <div id="root"> Cliquer sur l'image svp </div>
+    <input type="button" onclick="getRandom()" value="oki">
+    <div id="pp">..</div>
     <div name="test"> 1 </div>
     <div name="test"> 2 </div>
     <div name="test"> 3 </div>
@@ -110,6 +112,5 @@ include("user.php");
     }
     ?>
 </body>
-<script src="js/in.js"></script>
 
 </html>
